@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:hint="Causa de Denuncia"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Volver"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:background="#35FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:translationX="14.5dp"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/piclogomunicipio" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <ImageButton
+            android:id="@+id/AccountButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#00FF9800"
+            android:scaleType="fitCenter"
+            android:translationX="309.5dp"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/cuenta"
+            app:tint="#FF9800" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="#35FF9800"
+        android:translationX="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00FF9800"
+            android:scaleType="fitCenter"
+            android:translationX="14.5dp"
+            android:translationY="15dp"
+            app:srcCompat="@drawable/casa"
+            app:tint="#FF9800" />
+
+        <ImageButton
+            android:id="@+id/telefoneButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00FF9800"
+            android:scaleType="fitCenter"
+            android:translationX="324.5dp"
+            android:translationY="15dp"
+            app:srcCompat="@drawable/denuncia"
+            app:tint="#FF9800" />
+
+        <ImageButton
+            android:id="@+id/reportButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00FF9800"
+            android:scaleType="fitCenter"
+            android:translationX="117.83dp"
+            android:translationY="15dp"
+            app:srcCompat="@drawable/reporte"
+            app:tint="#FF9800" />
+
+        <ImageButton
+            android:id="@+id/workButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00FF9800"
+            android:scaleType="fitCenter"
+            android:translationX="221.11dp"
+            android:translationY="15dp"
+            app:srcCompat="@drawable/maleta"
+            app:tint="#FF9800" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Denuncia"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Vecino o comercio denunciado"
+        android:inputType="text"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Adjuntar pruebas"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:translationY="-20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="468dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Generar Denuncia"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto declaracion jurada"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
