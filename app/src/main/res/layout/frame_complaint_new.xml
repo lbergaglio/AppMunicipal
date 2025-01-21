@@ -6,25 +6,31 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextDescripcion"
         android:layout_width="350dp"
         android:layout_height="75dp"
+        android:layout_marginTop="180dp"
         android:ems="10"
         android:hint="Causa de Denuncia"
         android:inputType="text"
         android:textAlignment="center"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="300dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonVolverComplaint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#FF9800"
         android:text="Volver"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"
@@ -85,7 +91,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/telefoneButton"
+            android:id="@+id/telephoneButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -107,7 +113,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/workButton"
+            android:id="@+id/jobButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -124,42 +130,56 @@
         android:layout_height="wrap_content"
         android:text="Nueva Denuncia"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="150dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.315" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextTextVecinoComercio"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:hint="Vecino o comercio denunciado"
         android:inputType="text"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextDireccion"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="128dp"
         android:ems="10"
         android:hint="Direccion"
         android:inputType="text"
         android:textAlignment="center"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonAdjuntarArchivosComplaint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
         android:backgroundTint="#FF9800"
         android:text="Adjuntar pruebas"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:orientation="horizontal"
@@ -197,20 +217,25 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonGenerarDenuncia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
         android:backgroundTint="#FF9800"
         android:text="Generar Denuncia"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxDeclaracionJurada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
         android:text="Acepto declaracion jurada"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

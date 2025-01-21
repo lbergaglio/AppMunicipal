@@ -6,31 +6,36 @@
     android:layout_height="match_parent">
 
     <FrameLayout
+        android:id="@+id/frameLayout4"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="120dp"
         android:background="#AAAAAA"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="120dp">
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3">
 
         <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="centerInside"
-            android:translationX="359dp"
+            android:translationX="330dp"
             app:srcCompat="@drawable/filtros" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout3"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="#35FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -70,7 +75,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageButton
-            android:id="@+id/homeButton"
+            android:id="@+id/homeButtonReport"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -81,7 +86,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/telefoneButton"
+            android:id="@+id/telephoneButtonReport"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -92,7 +97,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/reportButton"
+            android:id="@+id/reportButtonReport"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -103,7 +108,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/workButton"
+            android:id="@+id/workButtonReport"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -114,32 +119,12 @@
             app:tint="#FF9800" />
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="170dp">
-
-        <ProgressBar
-            android:id="@+id/progressBar4"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-            android:translationX="100dp"
-            android:translationY="10dp" />
-
-    </FrameLayout>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/floatingActionButtonReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:translationX="330dp"
+        android:translationY="575dp"
         android:clickable="true"
         app:backgroundTint="#FF9800"
         app:backgroundTintMode="add"
@@ -148,5 +133,69 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="347dp"
         tools:layout_editor_absoluteY="563dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Texto de ejemplo 1"
+                android:padding="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Texto de ejemplo 1" />
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

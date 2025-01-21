@@ -6,17 +6,20 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/floatingActionButtonJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="325dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
         app:backgroundTint="#FF9800"
         app:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/agregar"
         app:tint="#FFFFFF"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="563dp" />
+        tools:ignore="MissingConstraints" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"
@@ -110,120 +113,144 @@
             app:tint="#FF9800" />
     </FrameLayout>
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:translationY="50dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="220dp">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-            android:translationX="100dp"
-            android:translationY="20dp" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:translationX="10dp"
-            android:translationY="15dp"
-            app:srcCompat="@drawable/logodefault" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:translationY="50dp"
-        tools:layout_editor_absoluteY="120dp">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-            android:translationX="100dp"
-            android:translationY="20dp" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:translationX="10dp"
-            android:translationY="15dp"
-            app:srcCompat="@drawable/logodefault" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:translationY="50dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="320dp">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:translationX="10dp"
-            android:translationY="15dp"
-            app:srcCompat="@drawable/logodefault" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-            android:translationX="100dp"
-            android:translationY="20dp" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:translationY="50dp"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="420dp">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-            android:translationX="100dp"
-            android:translationY="20dp" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:translationX="10dp"
-            android:translationY="15dp"
-            app:srcCompat="@drawable/logodefault" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="#AAAAAA"
+        android:layout_height="511dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="120dp">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleType="centerInside"
-            android:translationX="359dp"
-            app:srcCompat="@drawable/filtros" />
-    </FrameLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="50dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="220dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                    android:translationX="100dp"
+                    android:translationY="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:translationX="10dp"
+                    android:translationY="15dp"
+                    app:srcCompat="@drawable/logodefault" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="50dp"
+                tools:layout_editor_absoluteY="120dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                    android:translationX="100dp"
+                    android:translationY="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:translationX="10dp"
+                    android:translationY="15dp"
+                    app:srcCompat="@drawable/logodefault" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="50dp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="320dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:translationX="10dp"
+                    android:translationY="15dp"
+                    app:srcCompat="@drawable/logodefault" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                    android:translationX="100dp"
+                    android:translationY="20dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="50dp"
+                tools:layout_editor_absoluteX="-1dp"
+                tools:layout_editor_absoluteY="420dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                    android:translationX="100dp"
+                    android:translationY="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:translationX="10dp"
+                    android:translationY="15dp"
+                    app:srcCompat="@drawable/logodefault" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#AAAAAA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="120dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:translationX="359dp"
+                    app:srcCompat="@drawable/filtros" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

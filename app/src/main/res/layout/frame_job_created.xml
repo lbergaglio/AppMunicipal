@@ -9,20 +9,7 @@
         android:id="@+id/textView5"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:text="Tu reporte fue creado con exito!"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="El nº de reporte es: #4846 "
+        android:text="Tu servicio fue creado con exito!"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
@@ -31,17 +18,15 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
-        android:id="@+id/volverReportList"
+        android:id="@+id/buttonVolverJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:backgroundTint="#FF9800"
         android:text="Volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"

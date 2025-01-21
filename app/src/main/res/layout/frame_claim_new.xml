@@ -6,13 +6,13 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonVolverReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF9800"
         android:text="Volver"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"
@@ -110,91 +110,106 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="Nuevo Reclamo"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="150dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextDireccionReport"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="Dirección"
         android:inputType="text"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextDescriptionReport"
         android:layout_width="350dp"
         android:layout_height="150dp"
+        android:layout_marginTop="75dp"
         android:ems="10"
         android:hint="Descripcion"
         android:inputType="text"
         android:textAlignment="center"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonAdjuntarArchivosReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#FF9800"
         android:text="Adjuntar archivos"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="404dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF9800"
-        android:text="Enviar Reclamo"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="571dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescriptionReport" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewMaxArchivosReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
         android:text="(máximo 7 archivos)"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescriptionReport" />
+
+    <Button
+        android:id="@+id/buttonEnviarReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#FF9800"
+        android:text="Enviar Reclamo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxArchivosReport" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="70dp"
+        android:layout_marginTop="80dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="487dp">
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescriptionReport"
+        tools:ignore="MissingConstraints">
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view1"
             android:layout_width="70dp"
             android:layout_height="match_parent" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view2"
             android:layout_width="70dp"
             android:layout_height="match_parent" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view3"
             android:layout_width="70dp"
             android:layout_height="match_parent" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view4"
             android:layout_width="70dp"
             android:layout_height="match_parent" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/view5"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />

@@ -62,10 +62,11 @@
             android:translationX="14.5dp"
             android:translationY="15dp"
             app:srcCompat="@drawable/casa"
-            app:tint="#FF9800" />
+            app:tint="#FF9800"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
-            android:id="@+id/telefoneButton"
+            android:id="@+id/complaintButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -73,7 +74,8 @@
             android:translationX="324.5dp"
             android:translationY="15dp"
             app:srcCompat="@drawable/denuncia"
-            app:tint="#FF9800" />
+            app:tint="#FF9800"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/reportButton"
@@ -84,10 +86,11 @@
             android:translationX="117.83dp"
             android:translationY="15dp"
             app:srcCompat="@drawable/reporte"
-            app:tint="#FF9800" />
+            app:tint="#FF9800"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
-            android:id="@+id/workButton"
+            android:id="@+id/jobButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -95,73 +98,91 @@
             android:translationX="221.11dp"
             android:translationY="15dp"
             app:srcCompat="@drawable/maleta"
-            app:tint="#FF9800" />
+            app:tint="#FF9800"
+            tools:ignore="ContentDescription" />
     </FrameLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonPolice"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FF9800"
         android:text="POLICIA"
         android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAmbulance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonBomberStation"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="120dp"
         android:backgroundTint="#FF9800"
         android:text="BOMBEROS"
         android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        tools:layout_editor_absoluteX="55dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonVet"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="170dp"
         android:backgroundTint="#FF9800"
         android:text="VETERINARIA"
         android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        tools:layout_editor_absoluteX="55dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonTown"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="220dp"
         android:backgroundTint="#FF9800"
         android:text="MUNICIPIO"
         android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        tools:layout_editor_absoluteX="55dp" />
+        app:layout_constraintVertical_bias="0.037"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonAmbulance"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="70dp"
         android:backgroundTint="#FF9800"
         android:text="AMBULANCIA"
         android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBomberStation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
-        tools:layout_editor_absoluteX="55dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonVolverHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:backgroundTint="#FF9800"
         android:text="Volver"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

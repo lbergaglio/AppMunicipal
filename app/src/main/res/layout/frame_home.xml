@@ -11,14 +11,13 @@
         android:layout_height="120dp"
         android:background="#35FF9800"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
+            android:layout_width="252dp"
+            android:layout_height="84dp"
             android:translationX="14.5dp"
             android:translationY="20dp"
             app:srcCompat="@drawable/piclogomunicipio" />
@@ -29,7 +28,7 @@
             android:orientation="vertical" />
 
         <ImageButton
-            android:id="@+id/AccountButton"
+            android:id="@+id/accountButton"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="#00FF9800"
@@ -64,7 +63,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/telefoneButton"
+            android:id="@+id/complaintButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -86,7 +85,7 @@
             app:tint="#FF9800" />
 
         <ImageButton
-            android:id="@+id/workButton"
+            android:id="@+id/jobButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="#00FF9800"
@@ -99,21 +98,26 @@
 
     <ScrollView
         android:id="@+id/scrollHomeView"
-        android:layout_width="match_parent"
+        android:layout_width="414dp"
         android:layout_height="511dp"
-        tools:layout_editor_absoluteY="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="320dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
             android:orientation="vertical"
             android:translationY="15dp">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
                 android:fontFamily="sans-serif-light"
                 android:text="Reasfaltado de Avenida Vergara"
                 android:textAlignment="center"
@@ -128,6 +132,7 @@
                 android:translationX="24.5dp"
                 android:translationY="5dp"
                 app:srcCompat="@drawable/noticia_bera" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="120dp"
@@ -137,23 +142,30 @@
                 android:translationX="144.5dp"
                 android:translationY="5dp" />
         </LinearLayout>
+
     </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/floatingActionButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:clickable="true"
         android:scaleX="2"
         android:scaleY="2"
+        android:translationX="145dp"
+        android:translationY="250dp"
         app:backgroundTint="#FF9800"
         app:backgroundTintMode="add"
         app:fabCustomSize="45dp"
         app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollHomeView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/telefono"
         app:tint="#FFFFFF"
         app:useCompatPadding="true"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="530dp" />
+        tools:ignore="ContentDescription,MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

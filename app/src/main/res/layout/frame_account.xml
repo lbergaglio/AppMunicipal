@@ -105,35 +105,39 @@
         android:backgroundTint="#FF9800"
         android:text="Cambiar Contraseña"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="400dp" />
+        tools:layout_editor_absoluteY="400dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button7"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#FF9800"
         android:text="Mis Servicios"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="300dp" />
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button8"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#FF9800"
         android:text="Cerrar Sesión"
 
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="500dp" />
+        tools:layout_editor_absoluteY="500dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button9"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#FF9800"
         android:text="Mi Perfil"
 
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteY="200dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

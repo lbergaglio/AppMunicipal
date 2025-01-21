@@ -9,30 +9,39 @@
         android:id="@+id/textView5"
         android:layout_width="350dp"
         android:layout_height="75dp"
+        android:layout_marginTop="88dp"
         android:text="Tu denuncia fue creado con exito!"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="220dp"
         android:text="El nº de denuncia es: #5421"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="393dp" />
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonVolverComplaintList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF9800"
         android:text="Volver"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"
