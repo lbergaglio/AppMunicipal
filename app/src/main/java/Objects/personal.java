@@ -1,8 +1,9 @@
 package Objects;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class personal {
+public class personal implements Serializable {
     private int legajo;
     private String nombre;
     private String apellido;

@@ -6,7 +6,7 @@ public class rubros {
     private int idRubro;
     private String descripcion;
     private String categoria;
-    private boolean esProfecional;
+    private boolean isProfesional;
     private List<String> promociones;
 
     public int getIdRubro() {
@@ -33,12 +33,12 @@ public class rubros {
         this.categoria = categoria;
     }
 
-    public boolean isEsProfecional() {
-        return esProfecional;
+    public boolean esProfesional() {
+        return isProfesional;
     }
 
-    public void setEsProfecional(boolean esProfecional) {
-        this.esProfecional = esProfecional;
+    public void setEsProfesional(boolean isProfesional) {
+        this.isProfesional = isProfesional;
     }
 
     public List<String> getPromociones() {

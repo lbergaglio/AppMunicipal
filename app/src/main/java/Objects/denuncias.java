@@ -1,26 +1,26 @@
 package Objects;
 
 public class denuncias {
-    private int idDenuncias;
-    private int documento;
+    private int idDenuncia;
+    private String documento;
     private int idSitio;
     private String descripcion;
     private String estado;
-    private int aceptaREsponsabilidad;
+    private int aceptaResponsabilidad;
 
     public int getIdDenuncias() {
-        return idDenuncias;
+        return idDenuncia;
     }
 
-    public void setIdDenuncias(int idDenuncias) {
-        this.idDenuncias = idDenuncias;
+    public void setIdDenuncias(int idDenuncia) {
+        this.idDenuncia = idDenuncia;
     }
 
-    public int getDocumento() {
+    public String getDocumento() {
         return documento;
     }
 
-    public void setDocumento(int documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 
@@ -48,11 +48,11 @@ public class denuncias {
         this.estado = estado;
     }
 
-    public int getAceptaREsponsabilidad() {
-        return aceptaREsponsabilidad;
+    public int getAceptaResponsabilidad() {
+        return aceptaResponsabilidad;
     }
 
-    public void setAceptaREsponsabilidad(int aceptaREsponsabilidad) {
-        this.aceptaREsponsabilidad = aceptaREsponsabilidad;
+    public void setAceptaResponsabilidad(int aceptaResponsabilidad) {
+        this.aceptaResponsabilidad = aceptaResponsabilidad;
     }
 }

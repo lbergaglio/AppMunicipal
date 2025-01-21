@@ -1,17 +1,19 @@
 package Objects;
 
-public class vecinos {
-    private int documento;
+import java.io.Serializable;
+
+public class vecinos implements Serializable {
+    private String documento;
     private String nombre;
     private String apellido;
     private String direccion;
     private int codigoBarrio;
 
-    public int getDocumento() {
+    public String getDocumento() {
         return documento;
     }
 
-    public void setDocumento(int documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 
